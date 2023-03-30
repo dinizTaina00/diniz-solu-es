@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.clear{clear: both;}
+
+.divider {
+  height: 3rem;
+  background-color: #f3f3f3;
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%),
+    inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+}
+
+.icon-social-media-fixed{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:110px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 1px 1px 2px #888; 
+  z-index:1000;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.nav-logo{
+  padding: 15px;
+}
+
+.logo {
+  max-width: 175px;
+}
+
+.nav-item a{
+  color: black;
+  font-size: 18px;
+}
+
+.nav-item a:hover{
+  padding: 10px;
+}
+
+.menu{
+  background-color: #0c244d;
+}
+
+
+/* .tutorial-box {
+  max-width: 300px;
+}
+
+.tutorial-box-img {
+  width: 300px;
+  position: relative;
+}
+
+.tutorial-box-img img {
+  width: 300px;
+}
+
+.tutorial-description {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  padding: 40px;
+  max-width: 600px;
+  color: white;
+  z-index: 2;
+}
+
+.tutorial-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+} */
+
+.tutorial-single-box > p {
+  margin-bottom: 10px;
+}
+
+.card-img-top,
+.card-text,
+.card-body,
+.card-title,
+.blockquote > p,
+.card-body-product,
+.card-box-product,
+h5,
+a {
+  background-color: white;
+}
+
+.card-box-product{
+  max-width: 600px;
+}
+
+@media screen and (max-width: 728px){
+  .card-box-product{
+    max-width: 300px;
+}
+
+.card-box-product a {
+  color: black;
+}
+
+.card-body-product > blockquote {
+  font-size: 16px;
+}
+
+.container-image-text{
+  display: inline-block;
+  position: relative;
+}
+
+.container-image-text p{
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  top: 145px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+.sidenav-mobile{
+  width: 200px;
+}
+
+@media screen and (max-width: 728px){
+  .nav-pills{display: none;}
+
+  .mobile-menu{
+    display : block;
+  }
+
+  .desktop-menu{
+    display: none;
+  }
+
+  .card-product{
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  iframe#video{
+    max-width: 400px;
+  }
+
+  .card-box-product img{
+    width: 60%;
+    display: flex;
+    margin: auto;
+  }
+
+  .service-provided-img{
+    width: 450px;
+    display: flex;
+    margin: auto;
+  }
+
+  #navbar-brand img{
+    width: 190px;
+  }
+/*  #navbar-brand-mobile{
+    display: block;
+  }*/
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .featurette-heading {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
